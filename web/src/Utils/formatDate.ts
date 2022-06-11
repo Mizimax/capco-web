@@ -1,4 +1,5 @@
-export const getFullDate = (date: Date) => {
+export const getFullDateString = (dateString: string) => {
+  const date = new Date(dateString);
   // Ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat
   const options: Intl.DateTimeFormatOptions = {
     year: 'numeric',
