@@ -2,8 +2,12 @@ import { Box, styled, Typography } from '@mui/material';
 import { ProductType } from '../../Domains/Product';
 import Flex from '../Base/Flex';
 
-const NavItem = styled(Box)`
-  padding: 14px 32px;
+const NavItem = styled(Flex)`
+  width: 100%;
+  min-width: 100px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
   color: white;
   cursor: pointer;
 `;
