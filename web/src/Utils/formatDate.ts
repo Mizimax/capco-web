@@ -1,11 +1,12 @@
-export const getFullDate = (dateString) => {
-  const date = new Date(dateString);
+export const getFullDate = (date: Date) => {
   // Ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat
   const options: Intl.DateTimeFormatOptions = {
-    weekday: 'long',
     year: 'numeric',
     month: 'long',
     day: 'numeric',
+    hour: 'numeric',
+    hourCycle: 'h24',
+    minute: 'numeric',
     timeZone: 'Asia/Bangkok',
   };
   return new Intl.DateTimeFormat('en-US', options).format(date);

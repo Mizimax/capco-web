@@ -21,7 +21,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
       <Typography mt={1} variant={'body1'}>
         {product.productDetail}
       </Typography>
-      <Typography mt={1} variant={'body2'} color={'grey'}>
+      <Typography mt={1} variant={'body2'} color={'gray'}>
         Updated: {getFullDate(product.updatedAt)}
       </Typography>
     </Card>
