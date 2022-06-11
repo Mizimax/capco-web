@@ -3,8 +3,12 @@ import Flex from '../Base/Flex';
 
 const Navbar = ({ children }) => {
   return (
-    <Flex p={1} justifyContent={'space-between'} alignItems={'center'}>
-      <Typography variant={'h5'} component={'h1'}>
+    <Flex
+      flexDirection={{ xs: 'column', lg: 'row' }}
+      justifyContent={{ xs: 'center', lg: 'space-between' }}
+      alignItems={'center'}
+    >
+      <Typography ml={2} variant={'h5'} component={'h1'}>
         Capco Product
       </Typography>
       {children}
