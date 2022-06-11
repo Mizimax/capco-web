@@ -1,6 +1,6 @@
 import { styled, Box, Typography } from '@mui/material';
 import { Product } from '../../Domains/Product';
-import { getFullDate } from '../../Utils/formatDate';
+import { getFullDateString } from '../../Utils/formatDate';
 
 interface ProductCardProps {
   product: Product;
@@ -22,7 +22,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         {product.productDetail}
       </Typography>
       <Typography mt={1} variant={'body2'} color={'gray'}>
-        Updated: {getFullDate(product.updatedAt)}
+        Updated: {getFullDateString(product.updatedAt)}
       </Typography>
     </Card>
   );

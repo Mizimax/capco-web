@@ -11,8 +11,8 @@ export type Product = {
   productImage: string;
   productDetail: string;
   productType: ProductType;
-  createdAt: Date;
-  updatedAt: Date;
+  createdAt: string;
+  updatedAt: string;
 };
 
 export type ProductListProps = {
