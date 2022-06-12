@@ -17,5 +17,5 @@ export type Product = {
 
 export type ProductListProps = {
   search: string;
-  filter: ProductType;
+  filter: ProductType[];
 };
