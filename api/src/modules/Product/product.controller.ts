@@ -6,7 +6,7 @@ import { ProductService } from './product.service';
 export class ProductController {
   constructor(private readonly productService: ProductService) {}
   @Get('/products')
-  getPaymentMoethod(
+  getProductList(
     @Query('search') search: string,
     @Query('filter') filter: string,
     @Res() res: Response,
