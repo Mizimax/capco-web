@@ -23,6 +23,7 @@ yarn test
 - Hook test (useProductList)
 - Unit test (formatDate)
 - Component test (ProductCard)
+
 PS. Before run test, should run backend service.
 ``` 
 cd web
