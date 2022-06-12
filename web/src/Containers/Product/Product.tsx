@@ -49,6 +49,7 @@ const ProductContainer = () => {
         p={2}
         display={'grid'}
         gridTemplateColumns={{ xs: '1fr', sm: 'repeat(2, 350px)', md: 'repeat(3, 350px)' }}
+        justifyContent={'center'}
         rowGap={4}
         columnGap={4}
       >
