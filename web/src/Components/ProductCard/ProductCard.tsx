@@ -17,7 +17,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
       <Typography mb={2} variant={'h5'} color={'primary'} component={'h2'}>
         {product.productTitle}
       </Typography>
-      <img width={'100%'} src={product.productImage} />
+      <img width={'100%'} src={product.productImage} alt={'cover image'} />
       <Typography mt={1} variant={'body1'}>
         {product.productDetail}
       </Typography>
