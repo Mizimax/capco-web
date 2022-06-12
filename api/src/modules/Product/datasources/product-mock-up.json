@@ -1,0 +1,38 @@
+[
+    {
+        "productId": "3bfad027-7809-4a61-b58f-531fbcb4292d",
+        "productTitle": "First Title Capco",
+        "productImage": "https://user-images.githubusercontent.com/24763308/173191954-5499f451-a6d6-445a-adba-48932ba0e028.png",
+        "productDetail": "First Lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "productType": "NEWS",
+        "createdAt": "Sat Jun 11 2022",
+        "updatedAt": "Sat Jun 11 2022"
+    },
+    {
+        "productId": "0166668e-edc8-49a8-8d1f-f23a873a3cb9",
+        "productTitle": "Second Title",
+        "productImage": "https://user-images.githubusercontent.com/24763308/173191954-5499f451-a6d6-445a-adba-48932ba0e028.png",
+        "productDetail": "may Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "productType": "REGIONS",
+        "createdAt": "Sat Jun 11 2022",
+        "updatedAt": "Sat Jun 11 2022"
+    },
+    {
+        "productId": "a05d845b-8b17-4a08-a8ff-5dba6790f56d",
+        "productTitle": "Third Title",
+        "productImage": "https://user-images.githubusercontent.com/24763308/173191954-5499f451-a6d6-445a-adba-48932ba0e028.png",
+        "productDetail": "may Lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "productType": "VIDEO",
+        "createdAt": "Sat Jun 11 2022",
+        "updatedAt": "Sat Jun 11 2022"
+    },
+    {
+        "productId": "bbfc6e41-07fa-46c1-bd80-806fee80423f",
+        "productTitle": "Fourth Title Capco",
+        "productImage": "https://user-images.githubusercontent.com/24763308/173191954-5499f451-a6d6-445a-adba-48932ba0e028.png",
+        "productDetail": "may Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "productType": "TV",
+        "createdAt": "Sat Jun 11 2022",
+        "updatedAt": "Sat Jun 11 2022"
+    }
+]
