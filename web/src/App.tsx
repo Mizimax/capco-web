@@ -1,4 +1,3 @@
-import React from 'react';
 import { ThemeProvider } from '@mui/material';
 import { theme } from './theme';
 import ProductRoute from './Routes/Product';
