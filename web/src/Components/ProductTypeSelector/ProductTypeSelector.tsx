@@ -14,10 +14,10 @@ const NavItem = styled(Flex)`
 
 type ProductTypeSelector = {
   type?: ProductType;
-  onTypeChange: (type: ProductType) => void;
+  onTypeChange: (types: ProductType[]) => void;
 };
 
-const ProductTypeSelector = ({ type = ProductType.News, onTypeChange }) => {
+const ProductTypeSelector = ({ types = [ProductType.News], onTypeChange }) => {
   const handleSelectType = (type: ProductType) => {
     onTypeChange(type);
   };
@@ -25,25 +25,25 @@ const ProductTypeSelector = ({ type = ProductType.News, onTypeChange }) => {
   return (
     <Flex alignItems={'center'} gap={1}>
       <NavItem
-        bgcolor={type === ProductType.News ? 'primary.main' : ''}
+        bgcolor={types.includes(ProductType.News) ? 'primary.main' : ''}
         onClick={() => handleSelectType(ProductType.News)}
       >
         <Typography variant="subtitle1">News</Typography>
       </NavItem>
       <NavItem
-        bgcolor={type === ProductType.Regions ? 'primary.main' : ''}
+        bgcolor={types.includes(ProductType.Regions) ? 'primary.main' : ''}
         onClick={() => handleSelectType(ProductType.Regions)}
       >
         <Typography variant="subtitle1">Regions</Typography>
       </NavItem>
       <NavItem
-        bgcolor={type === ProductType.Video ? 'primary.main' : ''}
+        bgcolor={types.includes(ProductType.Video) ? 'primary.main' : ''}
         onClick={() => handleSelectType(ProductType.Video)}
       >
         <Typography variant="subtitle1">Video</Typography>
       </NavItem>
       <NavItem
-        bgcolor={type === ProductType.TV ? 'primary.main' : ''}
+        bgcolor={types.includes(ProductType.TV) ? 'primary.main' : ''}
         onClick={() => handleSelectType(ProductType.TV)}
       >
         <Typography variant="subtitle1">TV</Typography>

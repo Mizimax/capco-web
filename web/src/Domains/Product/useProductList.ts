@@ -10,7 +10,8 @@ const useProductList = ({ search, filter }: ProductListProps): Product[] => {
     try {
       const queryURL = new URL(productListURL);
       if (search) queryURL.searchParams.append('search', search);
-      if (filter) queryURL.searchParams.append('filter', filter);
+      if (Array.isArray(filter) && filter.length > 0)
+        queryURL.searchParams.append('filter', filter.join(','));
       const response = await axios.get(queryURL.toString());
       setProductList(response.data);
     } catch (error) {

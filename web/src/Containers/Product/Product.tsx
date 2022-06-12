@@ -8,15 +8,21 @@ import ProductCard from '../../Components/ProductCard/ProductCard';
 
 const ProductContainer = () => {
   const [search, setSearch] = useState<string>();
-  const [type, setType] = useState<ProductType>(ProductType.News);
-  const productList = useProductList({ search, filter: type });
+  const [types, setTypes] = useState<ProductType[]>([ProductType.News]);
+  const productList = useProductList({ search, filter: types });
 
   const handleOnSearchChange = (value: string) => {
     setSearch(value);
   };
 
   const handleOnTypeChange = (type: ProductType) => {
-    setType(type);
+    if (types.includes(type)) {
+      const deletedType = [...types];
+      deletedType.splice(types.indexOf(type), 1);
+      setTypes(deletedType);
+    } else {
+      setTypes([...types, type]);
+    }
   };
 
   return (
@@ -28,7 +34,7 @@ const ProductContainer = () => {
           justifyContent={'space-between'}
           flexDirection={{ xs: 'column', sm: 'row' }}
         >
-          <ProductTypeSelector type={type} onTypeChange={handleOnTypeChange} />
+          <ProductTypeSelector types={types} onTypeChange={handleOnTypeChange} />
           <Box bgcolor={'primary.main'} borderRadius={'16px'} textAlign={'center'} px={2} mx={2}>
             <TextField
               sx={{ minWidth: '300px', width: '100%' }}
@@ -42,7 +48,7 @@ const ProductContainer = () => {
       <Grid
         p={2}
         display={'grid'}
-        gridTemplateColumns={{ xs: '1fr', sm: 'repeat(2, auto)', md: 'repeat(3, auto)' }}
+        gridTemplateColumns={{ xs: '1fr', sm: 'repeat(2, 350px)', md: 'repeat(3, 350px)' }}
         rowGap={4}
         columnGap={4}
       >
