@@ -16,6 +16,6 @@ export type Product = {
 };
 
 export type ProductListProps = {
-  search: string;
-  filter: ProductType[];
+  search?: string;
+  filter?: ProductType[];
 };

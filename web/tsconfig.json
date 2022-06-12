@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "jsx": "react-jsx",
-        "types": ["jest", "node"]
+        "types": ["jest", "node"],
+        "resolveJsonModule": true
     }
 }
