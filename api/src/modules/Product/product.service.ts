@@ -4,8 +4,8 @@ import * as MOCKED_PRODUCT_LIST from './datasources/product-mock-up.json';
 import { Product } from './models/Product';
 
 interface ProductListInterface {
-  search: string;
-  filter: string[] | string;
+  search?: string;
+  filter?: string[] | string;
 }
 
 @Injectable()
